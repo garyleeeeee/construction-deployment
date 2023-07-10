@@ -1,0 +1,35 @@
+.personal-info-container {
+    padding-top: var(--navbar-height);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    & .backToHomeLink {
+        z-index: 999;
+        position: absolute;
+        top: calc(var(--navbar-height) + 20px);
+        left: 0;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--main-theme-colour);
+        margin-left: 18px;
+    }
+
+    .personal-info-icon-user {
+        font-size: 3.5rem;
+    }
+
+    ul {
+        list-style: none;
+        margin-top: 30px;
+
+        & li {
+            margin: 2rem 0;
+        }
+    }
+}
+

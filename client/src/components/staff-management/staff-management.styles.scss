@@ -1,0 +1,66 @@
+.staff-management-container {
+    padding: 10px;
+    padding-top: var(--navbar-height);
+
+    h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content {
+        @media (max-width: 600px) {
+            .table-container {
+                display: none;
+            }
+        }
+
+        .card-container {
+            @media (min-width: 601px) {
+                display: none;
+            }
+
+            .user-card {
+                width: 100%;
+                margin-bottom: 15px;
+                padding: 15px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+                .info-item {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+
+                    .label {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    .table-container {
+        overflow-x: auto;
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+            th,
+            td {
+                min-width: 120px;
+                padding: 10px;
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .profile-edit-btn {
+                width: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}

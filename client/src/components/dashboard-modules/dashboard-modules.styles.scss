@@ -1,0 +1,35 @@
+.dashboard-modules {
+    background-color: var(--section-background-colour);
+    padding: 40px 25px;
+
+    & > h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .module-link {
+        width: 100%;
+        text-decoration: none;
+    }
+}
+
+.module-cards {
+    width: 100%;
+    display: grid;
+    // grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    justify-items: center;
+    gap: 40px;
+}
+
+
+@media (min-width: 768px) {
+    .dashboard-modules {
+        padding: 40px 40px;
+    }
+    .module-cards {
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: auto;
+    }
+  }

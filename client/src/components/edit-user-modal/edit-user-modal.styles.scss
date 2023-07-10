@@ -1,0 +1,109 @@
+.edit-user-modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputContainer {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .closeBtn {
+        color: var(--secondary-text-colour);
+        font-weight: bold;
+        background-color: var(--decor-colour-warning);
+        border-radius: 5px;
+        border: none;
+        padding: 0px 3px;
+        cursor: pointer;
+        position: absolute;
+        transition: background-color 0.3s ease;
+        top: 10px;
+        right: 10px;
+    }
+
+    .closeBtnIcon {
+        font-size: 1.5rem;
+    }
+
+    .closeBtn:hover {
+        background-color: var(--main-theme-colour);
+    }
+
+    .closeBtn:focus {
+        outline: none;
+    }
+
+    .submitBtn {
+        padding: 5px 16px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: #ffffff;
+        background-color: var(--secondary-theme-colour);
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+        outline: none;
+        border: none;
+    }
+
+    .submitBtn:hover {
+        background-color: var(--main-theme-colour);
+    }
+
+}
+
+// Media Queries for larger screens
+@media screen and (min-width: 768px) {
+    .edit-user-modal-container {
+        width: 70%;
+    }
+
+    .inputContainer {
+        font-size: 1.1em;
+    }
+
+    .submitBtn {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .edit-user-modal-container {
+        width: 50%;
+    }
+}

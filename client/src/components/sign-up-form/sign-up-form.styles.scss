@@ -1,0 +1,84 @@
+.signUpContainer {
+    padding-top: var(--navbar-height);
+    height: calc(100vh - (var(--navbar-height)));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    
+    form {
+        margin-bottom: var(--navbar-height);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .inputContainer {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 5px;
+            font-size: 1.2rem;
+            outline-color: var(--secondary-theme-colour);
+            min-width: 250px;
+        }
+
+        button {
+            padding: 5px 16px;
+            margin: 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: var(--secondary-text-colour);
+            background-color: var(--secondary-theme-colour);
+            transition: background-color 0.3s ease;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: var(--main-theme-colour);
+        }
+
+        span {
+            margin-top: 30px;
+
+            a {
+                color: var(--secondary-theme-colour);
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+
+        .errorMessage {
+            color: var(--decor-colour-warning);
+            font-weight: bold;
+        }
+
+        .loadingIcon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+        }
+    }
+
+
+}
+
+@media only screen and (max-height: 670px) {
+    .signUpContainer form label,
+    .signUpContainer form input {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+  }

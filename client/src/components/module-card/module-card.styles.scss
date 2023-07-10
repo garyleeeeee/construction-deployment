@@ -1,0 +1,25 @@
+.module-card {
+    background-color: #FFFFFF;
+    color: var(--main-theme-colour);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 12px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.card-icon {
+    font-size: 3.5rem;
+}
+
+.module-card:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 8px var(--main-theme-colour);
+    background-color: var(--secondary-theme-colour);
+    color: var(--main-background-colour);
+}
